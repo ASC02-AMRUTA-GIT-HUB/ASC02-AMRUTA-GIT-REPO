@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alert & Textbox Update Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #container {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Demo: Click the button to alert and change textbox text</h2>
+
+  <div id="container">
+    <input type="text" id="myTextbox" value="not clicked" readonly>
+    <button id="myButton">Click me</button>
+  </div>
+
+  <script>
+    const button = document.getElementById("myButton");
+    const textbox = document.getElementById("myTextbox");
+
+    button.addEventListener("click", function() {
+      alert("Button was clicked!");
+      textbox.value = "clicked";
+      button.textContent = "Clicked";
+    });
+  </script>
+
+</body>
+</html>

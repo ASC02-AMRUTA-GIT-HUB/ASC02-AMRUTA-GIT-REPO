@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simba Cartoon Showcase</title>
+  <style>
+    body {
+      background: #f4f4f9;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 70%;
+      margin: 60px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+    img.cartoon {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img.cartoon:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    p.description {
+      margin-top: 20px;
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Meet Simba 🦁</h1>
+     <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Cartoons-PNG/Simba_Cartoon_PNG_Picture.png?m=1629830144"
+         alt="Simba cartoon"
+         id="imageSimba">
+    <p class="description">
+      Simba is the heroic lion from Disney’s <em>The Lion King</em>.  
+      Named after the Swahili word for "lion", Simba grows from a playful cub into a brave king of the Pride Lands.  
+      He learns responsibility, courage, and that facing your past is the first step to becoming who you truly are.
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('imageSimba').onclick = function() {
+      alert("kya be GANDU!");
+    };
+  </script>
+
+</body>
+</html>
