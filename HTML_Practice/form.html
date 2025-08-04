@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>98999
+<body style="background: #f0f4f7; margin: 0; padding: 0;">
+
+    <div style="max-width: 500px; margin: 50px auto; background: #fff; padding: 30px 40px; border-radius: 10px">
+        <h2 style="text-align: center; color: #333;">Registration Form</h2>
+        <form>
+            <!-- Name -->
+            <label style="display:block; margin: 15px 0 5px;">Full Name:</label>
+            <input type="text" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <!-- Password -->
+            <label style="display:block; margin: 15px 0 5px;">Password:</label>
+            <input type="password" name="password" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <!-- Gender -->
+            <label style="display:block; margin: 15px 0 5px;">Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <!-- Food Preference -->
+            <label style="display:block; margin: 15px 0 5px;">Food Preference:</label>
+            <select name="food" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="">Select</option>
+                <option value="Veg">Vegetarian</option>
+                <option value="Non-Veg">Non-Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+            </select>
+
+            <!-- Nationality -->
+            <label style="display:block; margin: 15px 0 5px;">Nationality:</label>
+            <select name="nationality" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="">Select</option>
+                <option value="Indian">Indian</option>
+                <option value="American">American</option>
+                <option value="British">British</option>
+                <option value="Canadian">Canadian</option>
+                <option value="Australian">Australian</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Email -->
+            <label style="display:block; margin: 15px 0 5px;">Email:</label>
+            <input type="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <!-- Phone -->
+            <label style="display:block; margin: 15px 0 5px;">Phone:</label>
+            <input type="tel" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <!-- DOB -->
+            <label style="display:block; margin: 15px 0 5px;">Date of Birth:</label>
+            <input type="date" name="dob" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+            <!-- Address -->
+            <label style="display:block; margin: 15px 0 5px;">Address:</label>
+            <textarea name="address" rows="3" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+            <!-- Buttons -->
+            <div style="text-align: center; margin-top: 25px;">
+                <input type="submit" value="Submit" style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin-right: 10px; cursor: pointer;">
+                <input type="reset" value="Reset" style="background-color: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
